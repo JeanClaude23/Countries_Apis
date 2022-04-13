@@ -31,7 +31,7 @@ async function getCountry() {
   updateCountriesInfo();
 }
 
-//display
+//display by pushing countries data
 function showCountry(country) {
   info.push(country);
   updateCountriesInfo();
@@ -44,8 +44,8 @@ function updateCountriesInfo(infoUpdate = info) {
     const countrydiv = document.createElement("div");
     countrydiv.className = "container rounded-lg shadow-lg bg-white pb-4";
     countrydiv.innerHTML = `
-                    <div class="col-md-3 p-4">
-                    <div class="card" style="width: 17rem;">
+                    <div class="col-md-2 p-1">
+                    <div class="card" style="width: 11rem;">
                     <img class="card-img-top" src="${
                       country.flag
                     }" alt="The country flag is for ${country.name.common}">
